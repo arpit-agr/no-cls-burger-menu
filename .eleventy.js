@@ -23,9 +23,9 @@ module.exports = function(eleventyConfig) {
   });
 
   //Passthrough copy
+	eleventyConfig.addPassthroughCopy("./src/images");
+	eleventyConfig.addPassthroughCopy("./src/scripts");
   // eleventyConfig.addPassthroughCopy("./src/fonts");
-	// eleventyConfig.addPassthroughCopy("./src/images");
-	// eleventyConfig.addPassthroughCopy("./src/scripts");
   // eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 	// eleventyConfig.addPassthroughCopy("./src/icon.svg");
 	// eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
