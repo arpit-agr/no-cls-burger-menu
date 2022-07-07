@@ -1,5 +1,11 @@
 {%- extends "layouts/base.html" -%}
 
 {%- block content -%}
-  {{ content | safe }}
+  <article class="[ post ] [ flow ]">
+    {{ content | safe }}
+  </article>
+{%- endblock -%}
+
+{%- block bodyScripts -%}
+  <script src="scripts/burger-menu.js" type="module" defer></script>
 {%- endblock -%}
