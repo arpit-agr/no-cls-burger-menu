@@ -269,15 +269,15 @@ main:focus {
 caused due to the burger menu */
 @media (max-width: 40rem) {
   .has-js .navigation {
-    /* The navigation is removed 
-    from the normal document flow 
-    and positioned absolutely   */
+    /* The navigation is removed from the normal document flow 
+    and no space is created */
     position: absolute;
+    /* positioned to avoid overflow issues */
     inset-inline-start: 0;
     opacity: 0;
   }
 
-  .has-js .burger-menu[enabled="true"][status="open"] .navigation {
+  .has-js .burger-menu[status="open"] .navigation {
     /* When the burger menu is opened 
     we reset the values */
     position: unset;
