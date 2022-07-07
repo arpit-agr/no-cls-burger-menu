@@ -265,17 +265,23 @@ main:focus {
   transform: rotate(180deg);
 }
 
-/* Prevent CLS on smaller viewports caused due to the burger menu */
+/* Prevent CLS on smaller viewports 
+caused due to the burger menu */
 @media (max-width: 40rem) {
   .has-js .navigation {
-    /* The navigation is removed from the normal document flow */
+    /* The navigation is removed 
+    from the normal document flow 
+    and positioned absolutely   */
     position: absolute;
+    inset-inline-start: 0;
     opacity: 0;
   }
 
   .has-js .burger-menu[enabled="true"][status="open"] .navigation {
-    /* When the burger menu is enabled we reset the values */
+    /* When the burger menu is opened 
+    we reset the values */
     position: unset;
+    inset-inline-start: unset;
     opacity: unset;
   }
 }
